@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formulario" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a57f93f4-460d-424a-aab2-fae1a8610391">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="NUM_PACIENTE" class="java.lang.Integer"/>
+	<parameter name="NOM_PACIENTE" class="java.lang.String"/>
+	<parameter name="DIR_PACIENTE" class="java.lang.String"/>
+	<parameter name="COD_MEDICO" class="java.lang.Integer"/>
+	<parameter name="NOM_MEDICO" class="java.lang.String"/>
+	<parameter name="ESP_MEDICO" class="java.lang.String"/>
+	<parameter name="TRATAMIENTO" class="java.lang.String"/>
+	<parameter name="IMAGE_PATH" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<textField>
+				<reportElement x="160" y="0" width="390" height="40" forecolor="#0820FF" uuid="27a6b12e-fe4b-4541-a633-75d6dc194814"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="25"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dr. "+$P{NOM_PACIENTE}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="30" y="0" width="100" height="100" uuid="9e0e5da6-49f6-48ca-b2f2-eff448525814"/>
+				<imageExpression><![CDATA[$P{IMAGE_PATH}+"logo-medico.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="160" y="40" width="390" height="30" forecolor="#5C5A5A" uuid="50b09be5-3f28-4fe7-a49a-9a5c4a9fd043"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ESP_MEDICO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="70" width="390" height="40" forecolor="#858585" uuid="40aa0a33-4869-4e9b-9830-6fb15f08668e"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº Colegiado "+$P{COD_MEDICO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="610" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle radius="15">
+				<reportElement x="0" y="0" width="549" height="89" uuid="f91b9776-b4f4-4b15-ade8-cca1d0986463"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="60" width="110" height="19" uuid="52381c75-2999-4b37-8e20-2ac1a48d9433"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nº Documento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="35" width="110" height="19" uuid="6b2eb176-f06a-40c5-bf8d-82ec6559e519"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="110" height="19" uuid="30fa6bee-b4ca-4406-9891-362da48e98c9"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nombre ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="120" y="22" width="420" height="1" uuid="3af8c2be-3cfd-4d4c-a693-c08fcf898935"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="120" y="48" width="420" height="1" uuid="69f52e49-afcf-4af9-9e89-0c7f6dc9121d"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="120" y="73" width="420" height="1" uuid="26028efd-3d84-4928-b098-6240b57028e7"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="120" y="8" width="420" height="22" uuid="20934bf9-6c5d-47cc-8d03-289f801186d6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOM_PACIENTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="33" width="420" height="22" uuid="f96dd7d9-05f3-475e-8501-a9638a6a5575"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DIR_PACIENTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="58" width="420" height="22" uuid="4258c9ab-b768-4eb8-9df3-b1d135ecaa93"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NUM_PACIENTE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="100" width="548" height="19" forecolor="#FFFFFF" backcolor="#0F6FFF" uuid="58dcae81-80e3-4c23-a99b-f8b865e8e739"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRATAMIENTO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="130" width="548" height="480" uuid="85145f7f-ffe2-4afc-8cdf-f5126177889c"/>
+				<textFieldExpression><![CDATA[$P{TRATAMIENTO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<summary>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="100cecca-fa26-466d-bd74-4e6bab3e9296"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="80" y="30" width="420" height="1" uuid="678d4d9d-8cf0-49fa-bc45-e4f527a07197"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

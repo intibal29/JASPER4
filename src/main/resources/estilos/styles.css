@@ -1,0 +1,62 @@
+/* Fondo de la pantalla */
+.root {
+    -fx-background-color: #f8f4f9; /* Un color rosa pálido para un fondo suave */
+}
+
+/* Estilo para los títulos */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #6f4f7b; /* Color lila oscuro para un toque más femenino */
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Botones */
+.button {
+    -fx-background-color: #d29cd3; /* Un tono rosa suave para los botones */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-size: 14px;
+    -fx-padding: 12px 24px; /* Espaciado cómodo */
+    -fx-background-radius: 25px; /* Esquinas más redondeadas */
+    -fx-border-radius: 25px; /* Esquinas más redondeadas */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0, 0, 2); /* Sombra suave */
+}
+
+.button:hover {
+    -fx-background-color: #b781b8; /* Cambio de color en hover para resaltar */
+}
+
+/* Campos de texto */
+.text-field, .text-area {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: #6f4f7b; /* Texto en lila oscuro */
+    -fx-border-color: #e0b3d2; /* Un borde lila claro */
+    -fx-border-radius: 15px; /* Esquinas redondeadas */
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el área de texto */
+.text-area {
+    -fx-pref-height: 180px; /* Altura preferida */
+    -fx-pref-width: 420px; /* Ancho preferido */
+}
+
+/* Campos de texto cuando el campo está enfocado */
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #d29cd3; /* Borde rosa cuando está enfocado */
+    -fx-background-color: #f9e0f7; /* Fondo rosa muy suave */
+}
+
+/* Espaciado entre los elementos del formulario */
+.grid-pane {
+    -fx-hgap: 24px;
+    -fx-vgap: 24px;
+}
+
+/* Espaciado para los botones */
+.hbox {
+    -fx-padding: 24px;
+    -fx-spacing: 40px; /* Espaciado más amplio entre botones */
+}
